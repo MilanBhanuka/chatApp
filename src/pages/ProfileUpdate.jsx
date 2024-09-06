@@ -1,9 +1,9 @@
 import React from 'react'
 
-function ProfileUpdate() {
+const ProfileUpdate = () => {
   return (
     <div>
-      profile update page
+      
     </div>
   )
 }
