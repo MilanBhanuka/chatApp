@@ -15,7 +15,7 @@ const ChatBox = () => {
       </div>
 
 
-      <div className='h-5/6 pb-3 overflow-y-scroll  flex flex-col-reverse px-2'>
+      <div className='h-5/6 pb-4 w-full absolute overflow-y-scroll   flex flex-col-reverse px-2'>
         <div className='flex items-end justify-end gap-2 py-2'>
           <p className='bg-blue-900 p-2 max-w-xs text-white rounded-l-xl rounded-tr-xl mb-4'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem?</p>
           <div>
@@ -32,9 +32,6 @@ const ChatBox = () => {
             <p className='text-xs'>2.30 PM</p>
           </div>
         </div>
-    
-
-
 
         <div className='flex items-end justify-end gap-2 py-2 flex-row-reverse'>
           <p className='bg-blue-900 p-2 max-w-xs text-white rounded-r-xl rounded-tl-xl mb-4'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem?</p>
@@ -49,7 +46,7 @@ const ChatBox = () => {
 
 
 
-      <div className='flex items-center gap-3 p-3 bg-white absolute bottom-0 right-0 left-0'>
+      <div className='flex items-center gap-3 p-2 bg-white absolute bottom-0 right-0 left-0'>
       <input type="text" placeholder="Type a message" className='w-full border-none bg-gray-200 rounded-full p-2' />
         <input type="file" id='image' accept='image/*' className='hidden' />
         <label htmlFor='image' className=''>
