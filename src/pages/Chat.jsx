@@ -7,11 +7,11 @@ import RightSidebar from '../components/RightSidebar'
 const Chat = () => {
   return (
     <div className="bg-gradient-to-r from-blue-400 to-blue-500 h-screen flex justify-center items-center overflow-hidden ">
-      <div className='w-11/12 max-w-5xl h-3/4 bg-white rounded-lg grid grid-cols-4'>
-        <div className='col-span-1 '>
+      <div className='w-11/12 max-w-5xl h-3/4 bg-blue-950 rounded-lg grid grid-cols-4 absolute'>
+        <div className='col-span-1  '>
           <LeftSidebar/>
         </div>
-        <div className='col-span-2'>
+        <div className='col-span-2 '>
           <ChatBox/>
         </div>
         <div className='col-span-1'>

@@ -3,7 +3,7 @@ import assets from "../assets/assets";
 
 const ChatBox = () => {
   return (
-    <div className='h-3/4 bg-slate-200 relative'>
+    <div className='h-full relative bg-slate-200'>
       <div className='flex px-3 py-2 items-center justify-between border-b-2 border-blue-950 bg-blue-200'>
         <div className='flex items-center gap-2'>
           <img src={assets.profile_img} alt="profile" className='w-10 rounded-full' />
@@ -50,7 +50,7 @@ const ChatBox = () => {
 
 
       <div className='flex items-center gap-3 p-3 bg-white absolute bottom-0 right-0 left-0'>
-        <input type="text" placeholder="Type a message" className='w-full bg-transparent' />
+      <input type="text" placeholder="Type a message" className='w-full border-none bg-gray-200 rounded-full p-2' />
         <input type="file" id='image' accept='image/*' className='hidden' />
         <label htmlFor='image' className=''>
           <img src={assets.gallery_icon} alt="image" className='w-5' />

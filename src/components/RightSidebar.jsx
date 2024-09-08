@@ -1,9 +1,10 @@
 import React from 'react'
 import assets from "../assets/assets";
+import { logout } from '../config/firebase';
 
 const RightSidebar = () => {
   return (
-    <div className='h-3/4 bg-blue-950 relative rounded-r-lg overflow-scroll '>
+    <div className='h-full absolute  bg-blue-950 rounded-r-lg overflow-scroll '>
       <div className='flex flex-col pt-14 text-center max-w-xs justify-center items-center'>
         <img src={assets.profile_img} alt="profile" className='w-20 rounded-full' />
         <div className='flex items-center gap-2'>
@@ -31,7 +32,7 @@ const RightSidebar = () => {
                     <img src={assets.pic3} alt="pic" className='w-20 rounded-lg' />
                 </div>
         </div>        
-        <button className='w-full bg-blue-900 text-white py-2 absolute bottom-0 hover:bg-blue-700'>Logout</button>
+        <button onClick={()=>logout()} className='w-full bg-blue-900 text-white py-2 absolute bottom-0 hover:bg-blue-700'>Logout</button>
     </div>
   )
 }
